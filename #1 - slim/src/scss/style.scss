@@ -1,0 +1,349 @@
+/*
+Author: Smart Code Media
+Project:  Slimfit
+Version:  1.0
+
+==================
+
+/*Vars
+====================*/
+$primary: #f54bc1;
+
+
+/* 1. Global Changes
+====================*/
+span{
+  color: $primary;
+}
+
+.btn-primary{
+  background-color: rgba(244, 0, 169, 0.83);
+  border: 2px solid #222;
+  color: white;
+  font-size: 16px;
+  padding: 10px 35px;
+  &:hover{
+    background-color: transparent;
+    border-color:white;
+  }
+}
+
+
+/* 2. Navbar
+====================*/
+
+.navbar{
+    box-shadow: 2px 2px 5px $primary;
+    z-index:199;
+
+    .navbar-brand img{
+        width: 100px;
+        height: 32px;
+    }
+
+    .nav-item{
+        .nav-link{
+            color: $primary;
+        }
+    }
+  
+}
+
+/* 3. Showcase
+====================*/
+#showcase{
+  color: white;
+  background-image: url(../img/showcase/layer-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  min-height: 100vh;
+  max-height: 100vh;
+  
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.wave{
+  background-image: url(../img/wave.png);
+  height: 100px;
+  margin-top: -98px;
+  z-index: 99;
+  position: relative;
+}
+
+/* 4. About Section
+====================*/
+
+#about{
+  background: url(../img/about-section/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media(max-width:767px){
+  #about{
+    background: none;
+  }
+}
+
+#product{
+  width: 60%;
+  height: 60%;
+
+}
+
+.info-mobile {
+  ul{
+    color: white;
+    font-size: 1.2rem;
+    list-style: none;
+    li{
+      border-radius: 50px;
+      background: #ff0076;
+    }
+  }
+}
+
+.circle{
+  height: 160px;
+  width: 160px;
+  background: white;
+  border: 2px solid $primary;
+  border-radius: 50%;
+  animation: pulse 0.6s infinite alternate;
+}@-webkit-keyframes pulse{
+  from{transform: scale3d(0.85,.85,1);}
+  to{transform: scale3d(1,1,1);}
+}
+
+#circle-one{
+  position: absolute;
+  top: 10%;
+  left: 85%;
+
+  background: url(../img/about-section/gluten.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+#circle-two{
+  position: absolute;
+  top: 69%;
+  left: 85%;
+
+  background: url(../img/about-section/meal.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#circle-three{
+  position: absolute;
+  top: 40%;
+  right: 15%;
+
+  font-size: 1.3rem;
+  font-family: monospace;
+}
+
+
+#circle-four{
+  position: absolute;
+  top: 70%;
+  left: 0;
+  background: url(../img/about-section/shake.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#circle-five{
+    position: absolute;
+  top: 5%;
+  left: 0;
+  background: url(../img/about-section/usa.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#circle-six{
+  position: absolute;
+  top: 40%;
+  left: 15%;
+
+}
+
+/* 5. Reserch Section
+====================*/
+
+#research{
+  height: 100%;
+  font-size: 100%;
+  background: url(../img/research/clients-bg-desktop.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+
+@media(max-width:767px){
+ #research{
+    background: url(../img/research/clients-bg-mob.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+ }
+}
+
+/* 6. Example Section
+====================*/
+
+.border-bg-purple{
+  border-radius: 50px;
+  background: purple;
+}
+
+/* 7. Products Section
+====================*/
+
+#products{
+  background-color: black;
+  color: white;
+}
+
+.product-info{
+  p{
+    color: #888;
+  }
+  img{
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10%;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.order-block{
+  background-color: #ffbe00;
+  a{
+    color: white;
+    &:hover{
+      text-decoration: none;
+      color: #333;
+    }
+  }
+}
+
+
+.swap-img-product img.off{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s linear;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+/* 8. Showroom Section
+====================*/
+
+.showroom-description{
+  p{
+    border-left: 1px solid #ff007f;
+    padding-left:15px;
+  }
+}
+
+/* 8. Testimonials Section
+====================*/
+#testimonials{
+  background: url(../img/clients-section/clients-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: white;
+}
+
+/* 9. Contacts Section
+====================*/
+#contacts{
+  background: black;
+  color: white;
+}
+
+.input-group{
+  .form-control{
+    border: 2px solid $primary;
+    border-left: none;
+  }
+}
+
+.input-group-addon{
+  border: 1px solid $primary;
+}
+
+.social-list{
+  i{
+    color: $primary;
+    padding-right: 5px;
+  }
+  li{
+    list-style: none;
+    float: left;
+  }
+}
+@media(max-width:767px){
+    li{
+      font-size: 0.7rem;
+  }
+}
+
+
+/* // Parallax libs //
+*************************************/
+.layer:nth-child(1) {
+  opacity: 0.15; }
+
+.layer:nth-child(1) button {
+  -webkit-transform: rotate(150deg); }
+
+.layer:nth-child(2) {
+  opacity: 0.90; }
+
+.layer:nth-child(2) button {
+  -webkit-transform: rotate(120deg); }
+
+.layer:nth-child(3) {
+  opacity: 0.95;
+}
+
+.layer:nth-child(3) button {
+  -webkit-transform: rotate(90deg); }
+
+.layer:nth-child(4) {
+  opacity: 0.95;
+  margin-top: 7%;
+  margin-left: 15%;
+  }
+
+.layer:nth-child(4) button {
+  -webkit-transform: rotate(60deg); }
+
+  @media(max-width:767px){
+    
+    .layer:nth-child(4) {
+      margin-left: 1.5%;
+      h1{
+        font-size: 2.8rem;
+      }
+    }
+  }
+

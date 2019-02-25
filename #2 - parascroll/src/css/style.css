@@ -1,0 +1,82 @@
+/*
+Author: Smart Code Media
+Project:  Slimfit
+Version:  1.0
+ 
+=====================
+
+/* General Changes
+====================*/
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {
+  color: #fbff00;
+  background: black; }
+
+.overlay {
+  position: relative;
+  z-index: 1; }
+  .overlay:after {
+    background: url(../img/overlay-bg.png);
+    content: "";
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+
+.btn-primary {
+  color: black;
+  background: white;
+  border: 1px solid black; }
+  .btn-primary:hover {
+    background: transparent; }
+
+.custom-row {
+  min-height: 100vh; }
+
+.float-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+section {
+  min-height: 100vh;
+  background-attachment: fixed; }
+
+#home {
+  background: url(../img/parallax/portfolio-item-1.jpg); }
+
+#about {
+  background: url(../img/parallax/portfolio-item-2.jpg); }
+
+#branding {
+  background: url(../img/parallax/portfolio-item-3.jpg); }
+
+.brand-area {
+  background: rgba(17, 17, 17, 0.6);
+  color: white;
+  border: 10px solid white; }
+
+#portfolio {
+  background: url(../img/parallax/portfolio-item-4.jpg); }
+
+.img-folio img {
+  margin: 3% 0;
+  width: 90%; }
+
+#clients {
+  background: url(../img/parallax/portfolio-item-5.jpg); }
+
+#contact {
+  background: url(../img/parallax/portfolio-item-6.jpg); }
+
+.form-control {
+  background: transparent;
+  color: black;
+  height: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .form-control:focus {
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
